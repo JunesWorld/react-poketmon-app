@@ -29,3 +29,18 @@ npm install
 [HMR(Hot Module Replace)]  
 파일을 편집할 때 전체 번들을 다시 빌드하는 것이 아닌 페이지의 나머지 부분에 영향을 주지 않고 변경된 모듈 자체를 교체해서 빠르게 화면에 반영되게 하는 것
 - Vite에서 HMR은 기본 ESM을 통해 수행됩니다.
+
+## TailWindCSS
+
+HTML 안에서, CSS style을 만들 수 있게 해주는 CSS Framework
+
+
+CSS Framework?
+- 레이아웃 및 여러 컴포넌트 구성, 브라우저 호환성을 보장하는데 소요되는 시간을 최소화하기 위해 여러 웹 개발/디자인 프로젝트에 적용할 수 있는 CSS 파일 모듈
+- 더 빠르게 애플리케이션을 스타일링 하는데 도움을 줍니다.
+
+
+Tailwind CSS의 장점
+- 부트스트랩과 비슷하게 미리 세팅된 Utility Class를 활용하는 방식으로 HTML에서 스타일링 할 수 있다.
+- class or id명을 작성하기 위한 고생하지 않아도 된다.
+- Utility class가 익숙해지는 시간이 필요할 수 있지만 IntelliSense Plugin이 제공돼서 금방 익숙해 질 수 있다.
