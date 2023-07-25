@@ -32,6 +32,10 @@ npm install
 
 ## TailWindCSS
 
+```bash
+npx tailwindcss init
+```
+
 HTML 안에서, CSS style을 만들 수 있게 해주는 CSS Framework
 
 
