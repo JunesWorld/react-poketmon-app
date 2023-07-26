@@ -9,6 +9,18 @@ npm i -D autoprefixer postcss tailwindcss
 npm install
 ```
 
+## Error
+
+'require' / 'module' is not defined 해결
+- .eslintrc 파일 내 env 설정 변경
+  ```js
+  module.exports = {
+	"env": {
+		"amd": ture, //require
+		"node": true, //module
+	}
+  ```
+
 ## Vite
 
 빌드 속도나 새로운 코드를 적용했을때 반영 속도 같은 Feedback 속도의 엄청난 개선  
