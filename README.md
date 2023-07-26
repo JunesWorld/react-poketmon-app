@@ -48,3 +48,16 @@ Tailwind CSS의 장점
 - 부트스트랩과 비슷하게 미리 세팅된 Utility Class를 활용하는 방식으로 HTML에서 스타일링 할 수 있다.
 - class or id명을 작성하기 위한 고생하지 않아도 된다.
 - Utility class가 익숙해지는 시간이 필요할 수 있지만 IntelliSense Plugin이 제공돼서 금방 익숙해 질 수 있다.
+
+## PostCSS & AutoFixer
+
+- Javascript로 CSS를 변환하는 도구
+- 코드 가독성 향상
+- CSS 규칙에 공급업체(provider) 접두사(prefixes)를 추가합니다.
+- Autoprefixer는 현재 브라우저 인기도 및 속성 지원을 기반으로 데이터를 사용하여 접두사를 적용합니다.
+
+## API를 통해 포켓몬 데이터 가져오기
+
+Axios란?
+- 브라우저, Node.js를 위한 Promise API를 활용하는 HTTP 비동기 통신 라이브러리입니다.
+- 쉽게 말해서 백앤드랑 프론트앤드 통신을 쉽게하기 위해 Ajax와 더불어 사용합니다.
