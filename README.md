@@ -60,3 +60,13 @@ Tailwind CSS의 장점
 - 부트스트랩과 비슷하게 미리 세팅된 Utility Class를 활용하는 방식으로 HTML에서 스타일링 할 수 있다.
 - class or id명을 작성하기 위한 고생하지 않아도 된다.
 - Utility class가 익숙해지는 시간이 필요할 수 있지만 IntelliSense Plugin이 제공돼서 금방 익숙해 질 수 있다.
+
+## Image Lazy Loading
+
+페이지 안에 있는 실제 이미지들을 바로 보여주는게 아닌 실제로 화면에 보일 필요가 있을 때 로딩을 할 수 있도록 하는 테크닉입니다.
+
+
+[구현방법]
+- Javascript 이벤트를 이용해서 구현
+- Intersection Observer API를 이용해서 구현
+- 브라우저 Native Lazy Loading 이용
