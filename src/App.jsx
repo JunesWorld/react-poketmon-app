@@ -12,7 +12,7 @@ function App() {
 
   // 0~1008개의 포켓몬 데이터
   // 21개씩 Pagination
-  const url = 'https://pokeapi.co/api/v2/pokemon/?limit=1008&offset=21'
+  const url = 'https://pokeapi.co/api/v2/pokemon/?limit=10&offset=0'
 
   // 3. useEffect 호출
   useEffect(() => {
@@ -22,7 +22,7 @@ function App() {
   const fetchPokeData = async() => {
     try {
         const response = await axios.get(url);
-        console.log(response.data.results)
+        // console.log(response.data.results)
         setPokemons(response.data.results);
     } catch (error) {
         console.error(error);
