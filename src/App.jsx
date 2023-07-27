@@ -1,15 +1,18 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
 
 function App() {
-
+  // 1. 컴포넌트 mount 후 state 초기화
   const [pokemons, setPokemons] = useState([]);
 
+  // 0~1008개의 포켓몬 데이터
+  // 21개씩 Pagination
   const url = 'https://pokeapi.co/api/v2/pokemon/?limit=1008&offset=21'
 
+  // 3. useEffect 호출
   useEffect(() => {
     fetchPokeData();
   }, [])
@@ -24,7 +27,7 @@ function App() {
     }
   }
 
-
+  // 2. Rendering
   return (
     <article className='pt-6'>
       <header className='flex flex-col gap-2 w-full px-4 z-50'>
