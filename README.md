@@ -70,3 +70,9 @@ Tailwind CSS의 장점
 - Javascript 이벤트를 이용해서 구현
 - Intersection Observer API를 이용해서 구현
 - 브라우저 Native Lazy Loading 이용
+
+## Debounce란?
+
+검색 입력에 입력할 때 입력 결과가 나타날 때까지 지연이 있습니다. 이 기능은 Debounce라는 function에 의해 제어됩니다. 사용자가 미리 결정된 시간 동안 타이핑을 멈출 때까지 keyup 이벤트 처리를 지연시킵니다.  
+이렇게 하면 UI 코드가 모든 이벤트를 처리할 필요가 없고 서버로 전송되는 API 호출 수도 크게 줄어듭니다. 입력된 모든 문자를 처리하면 성능이 저하되고 백앤드에 불필요한 로드가 추가될 수 있습니다.
+- hooks
