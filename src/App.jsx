@@ -12,18 +12,24 @@ function App() {
 
   // 0~1008개의 포켓몬 데이터
   // 21개씩 Pagination
-  const url = 'https://pokeapi.co/api/v2/pokemon/?limit=10&offset=0'
+  // 20개씩 보이고 더 보기 누르면 20개 추가
+  const [offset, setOffset] = useState(0);
+  const [limit, setLimit] = useState(20);
+  
 
   // 3. useEffect 호출
   useEffect(() => {
-    fetchPokeData();
+    fetchPokeData(true);
   }, [])
 
-  const fetchPokeData = async() => {
+  const fetchPokeData = async(isFirstFetch) => {
     try {
+        const offsetValue = isFirstFetch ? 0 : offset + limit;
+        const url = `https://pokeapi.co/api/v2/pokemon/?limit=${limit}&offset=${offsetValue}`
         const response = await axios.get(url);
         // console.log(response.data.results)
-        setPokemons(response.data.results);
+        setPokemons([...pokemons, ...response.data.results]);
+        setOffset(offsetValue)
     } catch (error) {
         console.error(error);
     }
@@ -50,6 +56,13 @@ function App() {
           )}
         </div>
       </section>
+            <div className='text-center'>
+              <button 
+                onClick={() => fetchPokeData(false)}
+                className='bg-slate-800 px-6 py-2 my-4 text-base rounded-lg font-bold text-white'>
+                더 보기
+              </button>
+            </div>
     </article>
   )
 }
