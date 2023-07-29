@@ -9,7 +9,7 @@ import { useDebounce } from './components/hooks/useDebounce';
 
 function App() {
   // Refactoring
-  // 모든 포켓몬 데이터를 가지고 있는 State
+  // 모든 포켓몬 데이터를 가지고 있는 State!
   const [allPokemons, setAllPokemons] = useState([])
 
   // 실제로 리스트로 보여주는 포켓몬 데이터를 가지고 있는 State
@@ -48,7 +48,7 @@ function App() {
       // console.log(response.data.results)
       // 모든 포켓몬 데이터 기억하기
       setAllPokemons(response.data.results)
-      // 실제로 화면에 보여줄 포켓몬 리스트 기억하는 state
+      // 실제로 화면에 보여줄 포켓몬 리스트 기억하는 state 20개
       setDisplayedPokemons(filterDisplayedPokemonData(response.data.results))
     } catch (error) {
         console.error(error);
