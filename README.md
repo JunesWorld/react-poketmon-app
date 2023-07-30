@@ -80,3 +80,21 @@ Tailwind CSS의 장점
 ## AutoComplete
 
 AutoComplete 기능을 구현하기 위해서 검색을 했을 때 그에 관련된 이름들을 가져올 수 있게 서버에서 포켓몬 이름들을 전달 해주면 좋지만 그러한 api는 없습니다. 그러기에 이 기능을 구현하려면 프론트앤드에서 먼저 모든 포켓몬의 데이터를 가지고 있어야 합니다.
+
+## React Router DOM
+
+React Router DOM을 사용하면 웹 앱에서 동적 라우팅을 구현할 수 있습니다. 라우팅이 실행 중인 앱 외부의 구성에서 처리되는 기존 라우팅 아키텍쳐와 달리 React Router DOM은 앱 및 플랫폼의 요구 사항에 따라 컴포넌트 기반 라우팅을 용이하게 합니다.
+
+
+[Install]
+```bash
+npm i react-router-dom --save
+```
+
+[설정하기]
+- 가장 먼저 할 일은 앱 어디에나 React Router를 사용할 수 있도록 하는 것입니다.
+- src 폴더에서 index.js 파일을 열고 react-router-dom에서 BrowserRouter를 가져온 다음 루트 구성요소(App 구성 요소)를 그 안에 래핑합니다.
+
+## SPA(Single Page Application)
+
+리액트는 SPA이기 때문에 하나의 index.html 템플릿 파일을 가지고 있습니다. 이 하나의 템플릿에 자바스크립트를 이용해서 따른 컴포넌트를 이 index.html 템플릿에 넣으므로 페이지를 변경해주게 됩니다. 이 때 React Router DOM 라이브러리가 새 컴포넌트로 라우팅/탐색을 하고 렌더링하는데 도움을 주게 됩니다.
