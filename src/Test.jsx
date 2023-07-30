@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios'
 import PokeCard from './components/PokeCard';
-import { useDebounce } from './components/hooks/useDebounce';
+import { useDebounce } from './hooks/useDebounce';
 
 function App() {
   // 1. 컴포넌트 mount 후 state 초기화
